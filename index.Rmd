@@ -6,6 +6,8 @@ always_allow_html: true
 
 Just testing some stuff.
 
+::: {.content-hidden when-format="pdf"}
+
 ```{r plot}
 library (visNetwork)
 nodes <- data.frame (
@@ -22,3 +24,4 @@ edges <- data.frame (
 visNetwork (nodes, edges)
 ```
 
+:::
