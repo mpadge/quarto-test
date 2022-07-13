@@ -15,8 +15,11 @@ a conditional statement:
 ```
 ::: {.content-hidden when-format="pdf"}
 ```
-(And the same error arises regardless of how that conditional clause is
-expressed.)
+That same error arises regardless of how that conditional clause is
+expressed, for example as:
+```
+::: {.content-hidden unless-format="html:js"}
+---
 
 That error message goes on to recommend inserting `always_allow_html: true`, as
 in the current version in this repo. Doing that leads to an xelatex error:
@@ -26,7 +29,8 @@ LaTex Error: Missing \begin{document}
 ```
 
 This happens because the HTML lines for the widget created in `index.Rmd` are
-inserted directly into `index.tex`.
+inserted directly into `index.tex`, even though the conditional clause should
+prevent that.
 
 ---
 
