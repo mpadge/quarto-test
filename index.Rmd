@@ -1,0 +1,24 @@
+---
+always_allow_html: true
+---
+
+# A Test {#test}
+
+Just testing some stuff.
+
+```{r plot}
+library (visNetwork)
+nodes <- data.frame (
+    label = letters,
+    value = rep (10, 26),
+    id = letters
+)
+ne <- 50L
+edges <- data.frame (
+    from = sample (letters, size = ne, replace = TRUE),
+    to = sample (letters, size = ne, replace = TRUE),
+    width = rep (5, ne)
+)
+visNetwork (nodes, edges)
+```
+

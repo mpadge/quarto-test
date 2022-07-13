@@ -1,0 +1,22 @@
+project:
+  type: book
+
+book:
+  title: "A quarto test"
+  author-meta: "An author"
+  description-meta: Testing quarto
+  reader-mode: true
+  repo-url: https://github.com/mpadge/quarto-test
+  repo-actions: [edit, issue]
+
+  chapters:
+  - part: Introduction
+    chapters:
+      - index.Rmd
+
+format:
+  html:
+    theme: [cosmo]
+    code-link: true
+  pdf:
+    output-file: "quarto-test"
