@@ -1,5 +1,11 @@
 # quarto test
 
+This was a test repo for [this `quarto`
+issue](https://github.com/quarto-dev/quarto-cli/issues/1378). All now fixed
+thanks to @cderv, so this repo has been archived.
+
+---
+
 This reproduces a bug when building a [quarto](https://quarto.org) book which
 includes a html widget. The
 [`_quarto.yml`](https://github.com/mpadge/quarto-test/blob/main/_quarto.yml)
